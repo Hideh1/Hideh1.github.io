@@ -7,7 +7,6 @@ published: true
 ---
 
 
-20211289 Haechan Jang
 
 ### Problem 1
 
