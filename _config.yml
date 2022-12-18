@@ -1,12 +1,11 @@
 title: Hideh's Blog
-author: Hideh
+author: GitHub User
 email: midsky1234@unist.ac.kr
 description: > # this means to ignore newlines until "show_exerpts:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 show_excerpts: true # set to true to show excerpts on the homepage
-futrue: true
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -14,12 +13,12 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Haechan Jang
-  tagline: Mathematics, Physics, Computer enginering
+  tagline: UNIST MTH 21
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   search: true # set to true to enable searchbar
   dark_mode: true # set to true to add dark mode toggle
-  portfolio_image: "Logo_hideh.jpg" # the path from the base directory of the site to the image to display (no / at the start)
+  portfolio_image: "Hideh_Logo.jpg" # the path from the base directory of the site to the image to display (no / at the start)
   html_lang: "en" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
   condensed_mobile:
     #- home
@@ -28,8 +27,8 @@ plainwhite:
   # generate social links in footer
   social_links:
     #twitter: samarsault
-    github:  samarsault
-    linkedIn: in/samarsault
+    #github:  samarsault
+    #linkedIn: in/samarsault
     #dribbble: jekyll
     #flickr:   jekyll
     instagram: haechan.j_2
@@ -39,7 +38,7 @@ plainwhite:
     #soundcloud: jekyll
     #telegram: jekyll
     #gitlab: jekyll
-    #email: jekyll
+    email: midsky1234@unist.ac.kr
 
     # Mastodon instances
     # mastodon:
