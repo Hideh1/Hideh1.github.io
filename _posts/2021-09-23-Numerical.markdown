@@ -331,9 +331,7 @@ $
 
 and we have
 
-$$
-\begin{align*}\lim \limits _{n \rightarrow \infty} \frac {|p_{n+1} - p|} {|p_n - p|} &= \lim \limits _{n \rightarrow \infty} \frac {e_{n+1}} {e_n} \\&=\lim \limits _{n \rightarrow \infty}  (g'(p) + e_n \frac 1 2 g''(\xi_3 ))\\&=g'(p) < \infty \end{align*}
-$$
+$$\begin{align*}\lim \limits _{n \rightarrow \infty} \frac {|p_{n+1} - p|} {|p_n - p|} &= \lim \limits _{n \rightarrow \infty} \frac {e_{n+1}} {e_n} \\&=\lim \limits _{n \rightarrow \infty}  (g'(p) + e_n \frac 1 2 g''(\xi_3 ))\\&=g'(p) < \infty \end{align*}$$
 
 Therefore, fixed point iteration method converge **linearly,** 
 
@@ -375,7 +373,7 @@ This algorithm works by the following process.
 step 1:
 
 $
-h_{n-1} = p_{n-1} - p_{n-2}\\h_{n} = p_{n} - p_{n-1}
+h_{n-1} = p_{n-1} - p_{n-2}\h_{n} = p_{n} - p_{n-1}
 $
 
 $
@@ -389,7 +387,7 @@ $
 step 2:
 
 $
-b_n = \delta_n + h_n d_n \\D_n = \sqrt{b_n^2 - 4f(p_n)d_n}
+b_n = \delta_n + h_n d_n \D_n = \sqrt{b_n^2 - 4f(p_n)d_n}
 $
 
 step 3: 
