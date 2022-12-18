@@ -3,6 +3,7 @@ layout: post
 title:  "Numerical Analysis Hw1"
 date:   2021-09-23 21:03:36 +0530
 categories: Mathematics Numerical_Analysis
+published: true
 ---
 
 
