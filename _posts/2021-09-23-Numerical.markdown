@@ -373,22 +373,30 @@ This algorithm works by the following process.
 step 1:
 
 $
-h_{n-1} = p_{n-1} - p_{n-2}\h_{n} = p_{n} - p_{n-1}
+h_{n-1} = p_{n-1} - p_{n-2}
 $
 
+$h_{n} = p_{n} - p_{n-1}$
+
 $
-\delta_{n-1} = \frac {f(p_{n-1}) - f(p_{n-2})} {p_{n-1} - p_{n-2}} \\ \delta_n =\frac {f(p_n) - f(p_{n-1})} {p_n - p_{n-1}} 
-$
+\delta_{n-1} = \frac {f(p_{n-1}) - f(p_{n-2})} {p_{n-1} - p_{n-2}}$ 
+
+
+$\delta_n =\frac {f(p_n) - f(p_{n-1})} {p_n - p_{n-1}} $
+
 
 $
 d_n = \frac {\delta_n - \delta_{n-1}} {h_{n-1} + h_n}
 $
 
+
 step 2:
 
-$
-b_n = \delta_n + h_n d_n \D_n = \sqrt{b_n^2 - 4f(p_n)d_n}
-$
+
+$b_n = \delta_n + h_n d_n$ 
+
+
+$D_n = \sqrt{b_n^2 - 4f(p_n)d_n}$
 
 step 3: 
 
