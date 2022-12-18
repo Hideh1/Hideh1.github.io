@@ -363,7 +363,11 @@ Also, we can see that the steffensen’s method has a small number of steps perf
 
 - Find approximations to within $10^{−5}$ to all the zeros of the following problems by
 the first finding the real zeros using Newton’s method and then reducing to polynomials of lower degree to determine any complex zeros by using the Muller’s method (section 2.6)
+
+
 a. $f(x) = x^4 − 2x^3 − 4x^2 + 4x + 4$
+
+
 b. $f(x) = x^4 − 2x^3 − 12x^2 + 16x − 40$
 
 The algorithm is similar to the Newton’s method, but the difference thing is that it does not require derivatives.
