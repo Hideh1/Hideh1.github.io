@@ -120,9 +120,9 @@ then we say that $α$ is the rate of convergence of the sequence. [2]
 
 The rate of convergence for each method is as follows.[3][4][5]
 
-$
+$$
  \begin{align*}&\alpha_{bisection} =1 \\&\alpha_{secant} = \frac{1 + \sqrt 5} 2 \approx 1.618\\ &\alpha_{newton} = 2  \end{align*} 
-$
+$$
 
 Following the formula (9) in rate.pdf , $\alpha$ and $x_n$ are hold follow.
 
@@ -134,7 +134,7 @@ Let’s apply it in those three methods.
 
 Put the $x_n$ values in the “List” variable and print approximate values $\alpha$ by using below script.
 
-Since $n \rarr \infin$ then approximate value $\alpha$ goes to real rate of converge each method, so we select n as big as possible.
+Since $n \rightarrow \infty$ then approximate value $\alpha$ goes to real rate of converge each method, so we select n as big as possible.
 
 ```python
 from math import log
@@ -221,9 +221,9 @@ Let’s $f(x) := g(x) - x$  then problem become to find $p$ such that $f(p) = 0$
 
 So,
 
-$
+$$
 \begin{align*} g(g( p_n) ) - 2 g(p_n ) + p_n &= (g( g(p_n)) - g(p_n)  ) - (g(p_n) - p_n)\\&=f(g(p_n)) - f(p_n) \\&=f(p_n + f(p_n)) - f(p_n)\end{align*} 
-$
+$$
 
 and we get follow
 
@@ -253,21 +253,21 @@ $
 
 for some $\xi_1$ which in between $x$ and $f(x)$ , and
 
-$
+$$
 \begin{align*}F(x) &= x- \frac {(f(x))^2} {f^{\prime}(x)f(x) + (f(x))^2 f^{\prime \prime} (\xi_1  )}\\&= x - \frac {f(x)}{f^{\prime} (x) + f(x) f^{\prime \prime} (\xi_1  )}\end{align*}
-$
+$$
 
 From $F(p) = p$ and $f(p) = p$ , we get 
 
-$
+$$
 \begin{align*} F(x) - F(p) = x - p - (f(x) - f(p)) \frac 1 {f'(x) + f(x) f^{\prime \prime} (\xi_1  )} \end{align*}
-$
+$$
 
 Note that $\lim \limits _{x \rightarrow p} f^{\prime \prime}( \xi_1 ) = 0$. Then we have follow
 
-$
+$$
 \begin {align*}  F'(p) &= \lim \limits_{x \rightarrow p } \frac {F{(x)} - F(p)}{x-p} \\&= \lim \limits_{x \rightarrow p } \left( 1 - \frac {f(x)  -f (p)} { x- p }  \frac 1 {f^{\prime} (x) + f(x) f^{\prime \prime} (\xi_1 )} \right) \\&=1 - f^{\prime} (p) \frac 1 {f^{\prime }(p)} = 0\end{align*}
-$
+$$
 
 Therefore, $F^{\prime}(p) = 0$
 
@@ -275,9 +275,9 @@ Let’s $e_n := p_n  - p$.
 
 By Taylor's theorem, we get follow;
 
-$
+$$
 \begin{align*} p_{n+1} &=F(p_n )\\ &= F(p + e_n )\\&=p_n + e_n F^\prime (p) +  {e_n} ^2 \frac 1 2 F^{\prime \prime} (p) + {e_n}^3  F^{\prime\prime\prime}(\xi_2) \end{align*}
-$
+$$
 
 for some $\xi_2$ which in between $p$ and $p_n$.
 
@@ -293,9 +293,9 @@ If $\delta <1$ then $0 \leq \left\vert e_{n+1} \right\vert \leq  {e_n}^2$ so $e_
 
 For that $\delta$, 
 
-$
+$$
 \begin{align*}\lim \limits _{n \rightarrow \infty}\frac {|p _{n+1} - p |}{|p_n - p|^2} &= \lim \limits _{n \rightarrow \infty} \frac {|e_{n+1}|}{|e_n|^2} \\&= \lim \limits _{n \rightarrow \infty}\frac 1 2 F^{\prime \prime} (p) + e_n F^{\prime \prime \prime} (\xi _2)\\&= \frac 1 2 F^{\prime \prime} (p) < \infty\end{align*}
-$
+$$
 
 So, the rate of converge is 2.
 
@@ -317,9 +317,9 @@ then for $e_n = p_{n} - p$ , we have $e_n \rightarrow 0$ as $n \rightarrow \inft
 
 And we use Taylor’s theorem then we  can get follow;
 
-$
+$$
 \begin{align*}p_{n+1} &= g(p_n) \\&=g(p + e_n) \\&= g(p) + e_n g'(p) + {e_n}^2 \frac 1 2 g''(\xi_3)\\&= p + e_n g'(p) + {e_n}^2 \frac 1 2 g''(\xi_3)\end{align*}
-$
+$$
 
 for some $\xi_3$ which in between $p$ and $p_n$
 
@@ -331,9 +331,9 @@ $
 
 and we have
 
-$
+$$
 \begin{align*}\lim \limits _{n \rightarrow \infty} \frac {|p_{n+1} - p|} {|p_n - p|} &= \lim \limits _{n \rightarrow \infty} \frac {e_{n+1}} {e_n} \\&=\lim \limits _{n \rightarrow \infty}  (g'(p) + e_n \frac 1 2 g''(\xi_3 ))\\&=g'(p) < \infty \end{align*}
-$
+$$
 
 Therefore, fixed point iteration method converge **linearly,** 
 
